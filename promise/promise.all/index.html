@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let PromiseCall = ((returnData, messsage) => {
+            return function (resolve, reject) {
+                setTimeout(() => {
+                    console.log(`The ${messsage} Promise has resolved`);
+                    resolve(66,77)
+                }, returnData * 100);
+            }
+        });
+ 
+
+        let p1 = new Promise(PromiseCall(10, 'first'));
+        let p2 = new Promise(PromiseCall(20, 'second'));
+        let p3 = new Promise(PromiseCall(30, 'third'));
+        let p4 = new Promise(function(resolve, reject){
+            reject('The fourth Promise has rejected.');
+        });
+        var Total = 0;
+        Promise.all([p1, p2, p3,p4]).then(result => {
+            for (i in result) { Total = Total += result[i]; }
+            console.log(`Result: ${result}`)
+            console.log(`Total: ${Total}`)
+        }).catch(error => {
+            console.log(`Error: ${error}`)
+        });
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
