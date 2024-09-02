@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //         // 1. Declare an empty array using JS literal notation
+      // var studentNames = [];
+
+      // // 2. Declare an empty array using JS object notation
+      // var studentNamesObj = new Array();
+
+      // // 3. Declare and initialize a strings array
+      // var Names = ["Areeb", "Ali", "asim", "azhar"];
+
+      // // 4. Declare and initialize a numbers array
+      // var numbers = [1, 2, 3, 4, 5];
+
+      // // 5. Declare and initialize a boolean array
+      // var boolValues = [true, false, true];
+
+      // // 6. Declare and initialize a mixed array
+      // var mixedArray = ["Areeb", 123, true, null, undefined];
+
+      // // 7. Declare and initialize an array with education qualifications in Pakistan
+      // var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+      // // Display the qualifications array
+      // document.write("Qualifications:"+ "<br>"+ "<br>");
+      // for (i=0; i<qualifications.length; i++) {
+      //     document.write(i+ ") " + qualifications[i] + "<br>");
+      // }
+
+      // q2 Write a program to store 3 student names in an array.Take
+      // another array to store score of these three students.
+      // Assume that total marks are 500 for each student, display
+      // the scores & percentages of students.
+      // var names = ["Areeb", "Asim", "Shariq"];
+      // var scores = [490, 380, 287];
+      // var totalScore = 500;
+      // var percentages = scores.map(score => (score / totalScore) * 100);
+
+      // document.write("Score of " + names[0] + " is " + scores[0] + " and percentage is " + percentages[0] + "%");
+      // document.write("<br>Score of " + names[1] + " is " + scores[1] + " and percentage is " + percentages[1] + "%");
+      // document.write("<br>Score of " + names[2] + " is " + scores[2] + " and percentage is " + percentages[2] + "%");
+      // initialize  an array color names. display the array elements in your browser.
+      // var color = ["red","green","blue","yellow"] ;
+      // document.write(color + "<br>");
+      // var inputColor = prompt("Enter color that you want to add in the beginning");
+      //  color.unshift(inputColor);
+      //  document.write( "updated array " + color + "<br>");
+      //  var inputColor2 = prompt("Enter color that you want to add in the end");
+      //  color.push(inputColor2);
+      //  document.write( "updated array2 " +color + "<br>");
+      //  var inputColor3 = prompt("Enter first color  that you want to add in the beginning");
+      //  var inputColor4 = prompt("Enter second color that you want to add in the beginning");
+
+      //  color.unshift(inputColor3,inputColor4);
+      //  document.write( "updated array2 : " +color+ "<br>");
+      //  // delete first element of array
+      //  color.shift();
+      //  document.write( "updated array2 : " +color+ "<br>");
+      //  // delete last element
+      //  color.pop();
+      //  document.write( "updated array2 : " +color+ "<br>");
+      // ask user to add color at his/her desired index
+      //  var inputColor = prompt( "Enter color name  that you want to add");
+      //  var inputIndex = parseInt(prompt( "Enter color index to add" + inputColor + " at desired index"));
+      //  color.splice(index , 0 , inputColor);
+
+      // document.write("Updated array" + color )
+
+      // var inputIndex = parseInt(prompt( "Enter color index that you want to delete"));
+      //  var inputCount = parseInt(prompt( "how many color you want to delete"));
+      //  color.splice(inputIndex , inputCount );
+
+      // document.write("Updated array" + color );
+
+      // Question number 10 chapter 16
+      //   var score = [320,230,480,120];
+      //   document.write("score of student" + score + "<br>");
+      //   var orderedScore = score.sort();
+      //   document.write("orderedScore of students" + orderedScore);
+
+      // Write a program to initialize an array with city names.
+      // Copy 3 array elements from cities array to selectedCities array.
+      // var city = ["hyderabad","karachi","mirpurkhas","larkana","noshero feroz"];
+      // var selectedCities = city.slice(0,3);
+      // document.write('selected cities ' + selectedCities.join(" "));
+
+      // write a program to create a single string from the below mentioned array
+      // var arr = ["This", "is", "my", "cat"];
+      // document.write("Array: " + arr + "<br>");
+      // var newArr = arr.join(" ");
+      // document.write("String" + newArr);
+      //   var deviceArray = ["keybord", "mouse", "printer", "monitor"];
+      //   for (i = 0; i <= deviceArray.length; i++) {
+      //     document.write(deviceArray[i]+ "<br>");
+      //   }
+      //   var deviceArray = ["keybord", "mouse", "printer", "monitor"];
+      //   for (i = deviceArray.length -1 ; i >= 0; i--) {
+      //     document.write(deviceArray[i]+ "<br>");
+      //   }
+
+      var mobileArray = ["Motorola", "Nokia", "samsang", "Oppo", "redme"];
+      document.write("<select>");
+      document.write("<option>Mobile Manufacturers</option>");
+      for (i = 0; i <= mobileArray.length; i++) {
+        document.write("<option>" + mobileArray[i] + "</option>");
+      }
+      document.write("</select>");
+    </script>
+  </body>
+</html>
