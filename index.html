@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      //         Write a program that takes a character (number or string)
+      // in a variable & checks whether the given input is a
+      // number, uppercase letter or lower case letter. (Hint: ASCII
+      // codes:- A=65, Z=90, a=97, z=122).
+
+      //       function checkCharacter(input) {
+      //   let asciiCode = input.charCodeAt(0);
+
+      //   if (!isNaN(parseInt(input))) {
+      //     console.log("Input is a number.");
+      //   } else if (asciiCode >= 65 && asciiCode <= 90) {
+      //     console.log("Input is an uppercase letter.");
+      //   } else if (asciiCode >= 97 && asciiCode <= 122) {
+      //     console.log("Input is a lowercase letter.");
+      //   } else {
+      //     console.log("Input is a special character.");
+      //   }
+      // }
+
+      // checkCharacter("5"); // Number
+      // checkCharacter("B"); // Uppercase letter
+      // checkCharacter("b"); // Lowercase letter
+      // checkCharacter("$"); // Special character
+
+      // Write a JavaScript program that accept two integers and
+      // display the larger. Also show if the two integers are equal.
+      // var input1 = parseInt(prompt("Please Enter Value number One."));
+      // var input2 = parseInt(prompt("Please Enter Value number Two."));
+
+      // function campareNum(input1,input2){
+      // if(input1 > input2){
+      //     console.log(`${input1} is Larger than ${input2}`)
+      // }
+      // else if(input1 < input2){
+      //     console.log(`${input2} is Larger than ${input1}`)
+      // }
+      // else{
+      //     console.log("Both numbers are equal")
+      // }
+      // }
+      // campareNum(5,5);
+      // campareNum(5,6);
+      // campareNum(7,5);
+
+      // Write a program that takes input a number from user &
+      // state whether the number is positive, negative or zero.
+
+      //  var input = prompt(parseInt("Please Input a Number"));
+      //  if(input>0){
+      //     console.log("The number is positive");
+      //  }
+      //  else if(input<0){
+      //     console.log("The  number is negative")
+      //  }
+      //  else {
+      //     console.log("The number is zero.")
+      //  }
+      // check if vowel or consonent
+      //  var userInput = prompt('Enter a character to check if vowel or consonant.');
+      //   userInput = userInput.toLocaleLowerCase();
+      //  if(userInput === "a"){
+      //    document.write("Input is a vowel")
+      //  }
+      //  else if(userInput === "e"){
+      //    document.write("Input is a vowel")
+      //  }
+      //  else if(userInput === "i"){
+      //    document.write("Input is a vowel")
+      //  }
+      //  else if(userInput === "o"){
+      //    document.write("Input is a vowel")
+      //  }
+      //  else if(userInput === "u"){
+      //    document.write("Input is a vowel")
+      //  }
+      //  else{
+      //    document.write("Input is a consonant." )
+      //  }
+                          // checking correct password
+      // var password = "Areeb123"
+      // var userInput = prompt('Enter correct password');
+      // if(userInput === ""){
+      //    alert("Please Enter password");
+
+      // }
+      // else if(userInput === "Areeb123" ){
+      //  document.write("Correct! The password you entered matches the original password")
+      // }
+      // else{
+      //    document.write('Incorrect Password')
+      // }
+      // This if/else statement does not work. Try to fix it:
+      // var greeting;
+      // var hour = 13;
+      // if (hour < 18) {
+      // greeting = "Good day";
+      // document.write(greeting);
+      // }
+      // else{
+      // greeting = "Good evening";
+      // document.write(greeting);
+      // }
+      // Write a program that takes time as input from user in 24
+      // hours clock format like: 1900 = 7pm. implement in if/esle statement
+      var time = parseInt(prompt("Enter time in 24 hours Clock (0-23)"));
+      if (time >= 0 && time < 12) {
+        document.write("Good Morning");
+      } else if (time >= 12 && time < 17) {
+        document.write("Good Afternoon");
+      } else if (time >= 17 && time < 21) {
+        document.write("Good Evening");
+      } else if (time >= 21 && time <= 23) {
+        document.write("Good Night");
+      } else {
+        document.write("Wrong input");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
